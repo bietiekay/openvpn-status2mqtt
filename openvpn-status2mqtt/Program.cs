@@ -168,14 +168,14 @@ namespace openvpnstatus2mqtt
                         // write out received+sent difference...
                         Logger.WriteLine(device.CommonName + " received " + DiffSent + " bytes and sent " + DiffReceived + " bytes.");
 
-			if (DiffReceived > 0)
+			if (DiffSent > 0)
 			{
                     	    Message = Convert.ToString(DiffSent);
                             if (client.IsConnected)
 	                        client.Publish(Topic + "/received", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
 			}
 
-			if (DiffSent > 0)
+			if (DiffReceived > 0)
 			{
                     	    Message = Convert.ToString(DiffReceived);
 	                    if (client.IsConnected)
