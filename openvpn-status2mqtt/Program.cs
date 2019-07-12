@@ -122,7 +122,7 @@ namespace openvpnstatus2mqtt
                 {
                     if (AllFileContent[i] != "ROUTING TABLE")
                     {
-                        Logger.WriteLine(AllFileContent[i]);
+                        //Logger.WriteLine(AllFileContent[i]);
                         // this is a hit, disect
                         string[] split = AllFileContent[i].Split(new Char[] { ',' });
                         if (split.Length > 3)
@@ -166,7 +166,7 @@ namespace openvpnstatus2mqtt
                         UInt64 DiffSent = device.BytesSent - previousdevice.BytesSent;
 
                         // write out received+sent difference...
-                        Logger.WriteLine(device.CommonName + " received " + DiffSent + " bytes and sent " + DiffReceived + " bytes.");
+                        //Logger.WriteLine(device.CommonName + " received " + DiffSent + " bytes and sent " + DiffReceived + " bytes.");
 
 			if (DiffSent > 0)
 			{
@@ -190,7 +190,7 @@ namespace openvpnstatus2mqtt
                         if (client.IsConnected)
                             client.Publish(Topic + "/status", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
 
-                        Logger.WriteLine(device.CommonName + " received " + device.BytesSent + " bytes and sent " + device.BytesReceived + " bytes.");
+                        //Logger.WriteLine(device.CommonName + " received " + device.BytesSent + " bytes and sent " + device.BytesReceived + " bytes.");
 
                         Message = Convert.ToString(device.BytesSent);
                         if (client.IsConnected)
