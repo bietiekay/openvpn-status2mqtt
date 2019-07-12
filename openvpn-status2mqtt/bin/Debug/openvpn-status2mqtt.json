@@ -1,0 +1,10 @@
+﻿{
+    "mqtt_broker_host": "192.168.178.92",
+    "mqtt_broker_port": 1883,
+    "mqtt_qos_level": "",
+    "mqtt_connect_retry_msec": 5000,
+    "mqtt_cultureinfo": "en-US",
+    "mqtt_enable_json_topic": true,
+    "mqtt_topic_prefix": "house/stappenbach/vpn/",
+    "openvpn-status-log":"/openvpn/openvpn-status.log"
+}

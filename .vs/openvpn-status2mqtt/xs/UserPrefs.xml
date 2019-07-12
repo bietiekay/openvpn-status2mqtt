@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{B0ED8CE9-8628-427A-AF2E-CEAF82486A9C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="openvpn-status2mqtt/ConsoleOutputLogger.cs">
+    <Files>
+      <File FileName="openvpn-status2mqtt/Program.cs" Line="44" Column="1" />
+      <File FileName="openvpn-status2mqtt/openvpn-status2mqtt.json" Line="11" Column="1" />
+      <File FileName="openvpn-status2mqtt/ConsoleOutputLogger.cs" Line="144" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="openvpn-status2mqtt" expanded="True">
+            <Node name="openvpn-status2mqtt" expanded="True">
+              <Node name="ConsoleOutputLogger.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.openvpn-status2mqtt PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
