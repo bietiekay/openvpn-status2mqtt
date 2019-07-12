@@ -1,0 +1,11 @@
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/openvpn-status2mqtt.json
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/openvpn-status2mqtt.exe
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/JsonConfig.dll
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/JsonFx.dll
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/M2Mqtt.Net.dll
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/M2Mqtt.Net.pdb
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/JsonFx.xml
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/bin/Debug/JsonConfig.pdb
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/obj/Debug/openvpn-status2mqtt.csproj.CoreCompileInputs.cache
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/obj/Debug/openvpn-status2mqtt.csproj.CopyComplete
+/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/obj/Debug/openvpn-status2mqtt.exe

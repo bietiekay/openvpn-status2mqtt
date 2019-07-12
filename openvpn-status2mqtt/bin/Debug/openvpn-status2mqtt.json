@@ -6,5 +6,6 @@
     "mqtt_cultureinfo": "en-US",
     "mqtt_enable_json_topic": true,
     "mqtt_topic_prefix": "house/stappenbach/vpn/",
-    "openvpn-status-log":"/openvpn/openvpn-status.log"
+    "openvpn_status_read_interval": 10,
+    "openvpn_status_log":"/openvpn/openvpn-status.log"
 }
