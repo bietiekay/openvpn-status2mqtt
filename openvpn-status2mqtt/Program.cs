@@ -166,15 +166,21 @@ namespace openvpnstatus2mqtt
                         UInt64 DiffSent = device.BytesSent - previousdevice.BytesSent;
 
                         // write out received+sent difference...
-                        Logger.WriteLine(device.CommonName + " received " + DiffReceived + " bytes and sent " + DiffReceived + " bytes.");
+                        Logger.WriteLine(device.CommonName + " received " + DiffSent + " bytes and sent " + DiffReceived + " bytes.");
 
-                        Message = Convert.ToString(DiffReceived);
-                        if (client.IsConnected)
-                            client.Publish(Topic + "/received", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
-                        Message = Convert.ToString(DiffReceived);
-                        if (client.IsConnected)
-                            client.Publish(Topic + "/sent", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+			if (DiffReceived > 0)
+			{
+                    	    Message = Convert.ToString(DiffSent);
+                            if (client.IsConnected)
+	                        client.Publish(Topic + "/received", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+			}
 
+			if (DiffSent > 0)
+			{
+                    	    Message = Convert.ToString(DiffReceived);
+	                    if (client.IsConnected)
+    	                        client.Publish(Topic + "/sent", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
+			}
                     }
                     else
                     {
@@ -184,12 +190,12 @@ namespace openvpnstatus2mqtt
                         if (client.IsConnected)
                             client.Publish(Topic + "/status", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
 
-                        Logger.WriteLine(device.CommonName + " received " + device.BytesReceived + " bytes and sent " + device.BytesSent + " bytes.");
+                        Logger.WriteLine(device.CommonName + " received " + device.BytesSent + " bytes and sent " + device.BytesReceived + " bytes.");
 
-                        Message = Convert.ToString(device.BytesReceived);
+                        Message = Convert.ToString(device.BytesSent);
                         if (client.IsConnected)
                             client.Publish(Topic + "/received", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
-                        Message = Convert.ToString(device.BytesSent);
+                        Message = Convert.ToString(device.BytesReceived);
                         if (client.IsConnected)
                             client.Publish(Topic + "/sent", Encoding.UTF8.GetBytes(Message), MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE, false);
 
