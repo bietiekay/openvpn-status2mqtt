@@ -1,20 +1,19 @@
 ﻿<Properties StartupConfiguration="{B0ED8CE9-8628-427A-AF2E-CEAF82486A9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="openvpn-status2mqtt/Program.cs">
     <Files>
       <File FileName="openvpn-status2mqtt/openvpn-status2mqtt.json" Line="9" Column="38" />
-      <File FileName="openvpn-status2mqtt/Program.cs" Line="114" Column="19" />
+      <File FileName="openvpn-status2mqtt/Program.cs" Line="163" Column="88" />
       <File FileName="Dockerfile" Line="8" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="openvpn-status2mqtt" expanded="True">
-            <Node name="Solution Items" expanded="True">
-              <Node name="/home/bietiekay/code/openvpn-status2mqtt/Dockerfile" selected="True" />
-            </Node>
+            <Node name="Solution Items" expanded="True" />
             <Node name="M2Mqtt.Net" expanded="True" />
             <Node name="openvpn-status2mqtt" expanded="True">
               <Node name="References" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,7 +32,6 @@
   <MonoDevelop.Ide.ItemProperties.openvpn-status2mqtt PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/bietiekay/code/openvpn-status2mqtt/openvpn-status2mqtt/Program.cs" relfile="openvpn-status2mqtt/Program.cs" line="190" column="1" />
       <Breakpoint file="/home/bietiekay/code/openvpn-status2mqtt/Dockerfile" relfile="Dockerfile" line="8" column="46" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
